@@ -5,10 +5,13 @@ Installation of SBT, Scala and Spark
 How to run:
 
 1. Create JAR using below
+
    sbt clean package
    
 2. Run using spark-submit from terminal
+
   a. Go to the project location and hit below command by setting master(yarn, local) and JAR location.
+  
   b. Pass the source files location as arguments for handling changes of files every day
 
 spark-submit --class KaggleApp --master local[8] target/scala-2.12/kaggleanalytics_2.12-0.1.jar src/main/resources/googleplaystore.csv src/main/resources/googleplaystore_user_reviews.csv
