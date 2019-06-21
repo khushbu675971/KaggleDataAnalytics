@@ -1,3 +1,31 @@
+This application do analytics on Kaggle datasets for google play store apps. 
+
+This is the dataset (consisting of two files):
+
+https://www.kaggle.com/lava18/google-play-store-apps
+
+
+This application calculates below computation on this dataset:
+
+1. List all applications, which have at least 10.000 reviews, at least 50.000 Installations and which are supported on Android 4.0 and higher.
+
+2. Find the top 10 applications in regards to the highest number of positive sentiments.
+
+3. Create a histogram (at least the data, visualization is optional) for the number of installations.
+
+4. Count the number of distinct genres
+
+5. Find all the applications, which have more positive sentiments than negative and neutral together and which have a rating at least 4.2.
+
+6. Is there some correlation between some of the attributes (e.g. between Rating and Installs)? Can you back it up with numbers?
+
+7. Assumed that the source files would change every day, create a design, which would cover the following:
+
+            - Regular load of the data
+
+            - Regular computation of the metrics (Exercise 1-5) so that they can be easily consumed by a dashboard.
+
+
 Pre-Requisite:
 
 Installation of SBT, Scala and Spark
